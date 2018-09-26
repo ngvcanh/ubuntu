@@ -78,3 +78,42 @@ Change "disable" for "enabled", save the file and restart mongod
 ```
 sudo systemctl restart mongod
 ```
+
+## 3. Install PHP MongoDB Driver (PHP 7.2)
+
+Install `phpize`
+
+```
+sudo apt install php7.2-dev
+```
+
+Install Driver
+
+```
+sudo pecl install mongodb
+```
+
+Create mod init file
+
+```
+sudo vi /etc/php/7.2/mods-available/mongodb.ini
+```
+
+Add content
+
+```ini
+extension=mongodb.so
+```
+
+Create symbolink
+
+```
+sudo bash
+sudo echo "extension=mongodb.so" >> /etc/php/7.2/apache2/php.ini
+```
+
+Restart apache
+
+```
+sudo systemctl restart apache2
+```
