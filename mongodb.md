@@ -12,7 +12,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD7
 
 Create a empty content list file for MongoDB: `/etc/apt/sources.list.d/mongodb-org-4.0.list`
 
-Create the /etc/apt/sources.list.d/mongodb-org-4.0.list file
+Create the **/etc/apt/sources.list.d/mongodb-org-4.0.list** file
 
 ```
 echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
