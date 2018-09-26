@@ -1,4 +1,4 @@
-## Install phpMyAdmin
+## 1. Install phpMyAdmin
 
 ```
     sudo apt update
@@ -19,7 +19,7 @@ Afterwards, restart Apache for your changes to be recognized:
     sudo systemctl restart apache2
 ```
 
-## Config MySQL
+## 2. Config MySQL
 
 ```
     sudo mysql
@@ -50,7 +50,7 @@ Run FLUSH PRIVILEGES which tells the server to reload the grant tables and put n
     FLUSH PRIVILEGES;
 ```
 
-## Fix error 404 for phpMyAdmin
+## 3. Fix error 404 for phpMyAdmin
 
 Run command
 
