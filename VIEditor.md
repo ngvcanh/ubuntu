@@ -34,9 +34,3 @@ Insert content
 set nocompatible
 set backspace=2
 ```
-
-If it is not working. Run command:
-
-```
-sudo chsh -s /bin/bash <username>
-```
