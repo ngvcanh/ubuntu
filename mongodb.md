@@ -28,6 +28,8 @@ Install the MongoDB packages.
 
 ```
 sudo apt-get install -y mongodb-org
+sudo systemctl start mongod
+sudo systemctl enable mongod
 ```
 
 ## 2. Config authentication MongoDB
