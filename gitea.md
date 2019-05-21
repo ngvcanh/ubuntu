@@ -126,7 +126,9 @@ systemctl status gitea
 Start the installation by visiting http://serverip:3000/install
 
 Refer install Apache
+
 https://github.com/ngvcanh/ubuntu/blob/master/apache.md
 
 Refer create VirtualHost and config Proxy
+
 https://github.com/ngvcanh/ubuntu/blob/master/VirtualHost.md
