@@ -29,3 +29,9 @@ sudo systemctl restart apache2
 ```
 sudo systemctl status apache
 ```
+
+## 6. Check config apache
+
+```
+apachectl configtest
+```
