@@ -125,6 +125,8 @@ systemctl status gitea
 
 Start the installation by visiting http://serverip:3000/install
 
+## 4. Run with domain without port
+
 Refer install Apache
 
 https://github.com/ngvcanh/ubuntu/blob/master/apache.md
