@@ -35,3 +35,11 @@ sudo systemctl status apache
 ```
 apachectl configtest
 ```
+
+## 7. Upgrade Apache
+
+```
+apt-add-repository ppa:ondrej/apache2
+apt-get update
+apt-get dist-upgrade
+```
