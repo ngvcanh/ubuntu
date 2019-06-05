@@ -134,3 +134,22 @@ https://github.com/ngvcanh/ubuntu/blob/master/apache.md
 Refer create VirtualHost and config Proxy
 
 https://github.com/ngvcanh/ubuntu/blob/master/VirtualHost.md
+
+## 5. Disable register
+
+```
+vi /etc/gitea/app.ini
+```
+
+Change value of
+
+```
+DISABLE_REGISTRATION = true
+REQUIRE_SIGNIN_VIEW = true
+```
+
+Reload gitea
+
+```
+systemctl restart gitea
+```

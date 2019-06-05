@@ -26,7 +26,7 @@ chmod -R 755 /var/www/example.com
 Go to folder site config
 
 ```
-cd /etc/apache2/site-available
+
 ```
 
 Create configuration file
@@ -70,7 +70,7 @@ systemctl reload apache2
 Open config file site
 
 ```
-vi /etc/apache2/site-available/example.com.conf
+vi /etc/apache2/sites-available/example.com.conf
 ```
 
 Add end of tag `<VirtualHost *>`
