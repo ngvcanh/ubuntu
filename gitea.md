@@ -153,3 +153,5 @@ Reload gitea
 ```
 systemctl restart gitea
 ```
+
+Read more: https://docs.gitea.io/en-us/config-cheat-sheet/
