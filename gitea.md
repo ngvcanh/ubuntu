@@ -155,3 +155,9 @@ systemctl restart gitea
 ```
 
 Read more: https://docs.gitea.io/en-us/config-cheat-sheet/
+
+## 6. Using Git to create an archive of changed files.
+
+```
+git archive -o update.zip HEAD $(git diff --name-only HEAD^)
+```
