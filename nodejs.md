@@ -7,6 +7,8 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
+Search on browser URL "https://deb.nodesource.com/setup_`{version}`.x" to get new version
+
 ## 2. Install Yarn
 
 ```
