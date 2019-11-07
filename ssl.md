@@ -33,3 +33,9 @@ systemctl restart apache2
 ```
 certbot renew --dry-run
 ```
+
+## 4. Delete Cetbot
+
+```
+certbot delete domain.com
+```
