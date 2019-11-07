@@ -26,7 +26,7 @@ chmod -R 755 /var/www/example.com
 Go to folder site config
 
 ```
-
+cd /etc/apache2/sites-available/
 ```
 
 Create configuration file
