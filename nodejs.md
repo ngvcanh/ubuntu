@@ -23,6 +23,12 @@ sudo apt-get update && sudo apt-get install yarn
 sudo npm install -g nodemon
 ```
 
+Run `nodemon` with `npm`
+
+```
+nodemon --exec npm <command>
+```
+
 ## 4. Install pm2
 
 ```
@@ -30,3 +36,11 @@ sudo npm install -g pm2
 sudo pm2 startup
 sudo pm2 save
 ```
+
+Run `pm2` with `npm`
+
+```
+pm2 start [--name app_name] [-i max] npm --- run-script <script>
+```
+- `[-name app_name]` : Rename `app_name` for app
+- `[-i max]` : Run with cluster mode
