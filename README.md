@@ -17,3 +17,9 @@ ssh-keygen -R <hostname>
 ```
 hostname <NEW_NAME>
 ```
+
+## 4. Push directory to another server
+
+```
+scp -r /path/to/local/dir user@remotehost:/path/to/remote/dir
+```
