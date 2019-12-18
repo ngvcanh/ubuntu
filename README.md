@@ -23,3 +23,19 @@ hostname <NEW_NAME>
 ```
 scp -r /path/to/local/dir user@remotehost:/path/to/remote/dir
 ```
+
+## 5. Copy file
+
+```
+cp target_path destination_path
+```
+
+## 6. Check Server
+
+```
+# RAM
+free -m
+
+# Hard disk
+df -h
+```
