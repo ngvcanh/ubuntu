@@ -30,6 +30,8 @@ Edit domain:
 
 ```
 external_url "http://<yourdomain>"
+letsencrypt['enable'] = true
+letsencrypt['contact_emails'] = ['sammy@yourdomain.com']
 ```
 
 Save configuration
