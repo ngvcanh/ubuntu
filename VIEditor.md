@@ -34,3 +34,10 @@ Insert content
 set nocompatible
 set backspace=2
 ```
+
+## 4. Fix cannot enable insert mode
+
+```
+apt-get install vim-gui-common
+apt-get install vim-runtime
+```
