@@ -28,7 +28,7 @@ Output:
 +------------------+-------------------------------------------+-----------------------+-----------+
 | user             | authentication_string                     | plugin                | host      |
 +------------------+-------------------------------------------+-----------------------+-----------+
-| root             |                                           | <span style="color:red">auth_socket</span>           | localhost |
+| root             |                                           | auth_socket           | localhost |
 | mysql.session    | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | mysql_native_password | localhost |
 | mysql.sys        | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | mysql_native_password | localhost |
 | debian-sys-maint | *6FD1597101D91A4CB7E4B1B7376ECE50493EA4C1 | mysql_native_password | localhost |
@@ -47,4 +47,16 @@ Apply permission
 FLUSH PRIVILEGES;
 ```
 
-## 1. Reset password for root mysql
+## 3. Delete function in mysql
+
+Login to mysql
+
+```
+mysql -u root -p
+```
+
+Enter password of root user. After login, run SQL
+
+```sql
+DROP FUNCTION function_name
+```
