@@ -65,10 +65,10 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Check is expect package installed
-if [ $(dpkg-query -W -f='${Status}' expect 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
-  text_red "Can't find expect. Trying install it..."
-  aptitude -y install expect
-fi
+#if [ $(dpkg-query -W -f='${Status}' expect 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
+#  text_red "Can't find expect. Trying install it..."
+#  aptitude -y install expect
+#fi
 
 ##########################################
 ##  Update & Upgrade server
@@ -118,7 +118,7 @@ text_green "Install module PHP 5.6..."
 apt install -y php5.6-common php5.6-bcmath php5.6-curl php5.6-fpm php5.6-gd php5.6-imap php5.6-intl php5.6-json php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-opcache php5.6-xml php5.6-xsl php5.6-zip
 
 # Restart apache2
-text_green "Install module PHP 5.6..."
+text_green "Restart Apache..."
 systemctl restart apache2
 
 ##########################################
