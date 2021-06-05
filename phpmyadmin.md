@@ -58,6 +58,14 @@ Run command
 sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 ```
 
+OR, open `/etc/apache2/apache2.conf` and add end of file:
+
+```
+IncludeOptional /etc/phpmyadmin/apache.conf
+```
+
+Close file and restart apache2
+
 ## 4. Fix error count() parameter
 
 Open lib
