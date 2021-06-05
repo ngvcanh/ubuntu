@@ -39,3 +39,13 @@ free -m
 # Hard disk
 df -h
 ```
+
+## 7. Show app using port
+
+```
+# find port
+netstat -tulpn | grep --color :3000
+
+# show app
+netstat -lp
+```
